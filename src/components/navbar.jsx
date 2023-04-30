@@ -1,7 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import Logo from "../images/logo.png";
-import { Outlet } from "react-router-dom";
-import { BrowserRouter, Link } from 'react-router-dom';
 import "../style.css";
 import { RxCross2 } from "react-icons/rx";
 import { RiBarChartHorizontalFill } from "react-icons/ri";

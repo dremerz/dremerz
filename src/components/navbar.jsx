@@ -17,7 +17,7 @@ export default function Navbar() {
     <>
   <header id="qodef-page-header" role="banner">
     <div id="qodef-page-header-inner" className="">
-    <Link to="/home">   <a
+    <Link activeClassName="active-link" to="/home">   <a
         itemProp="url"
         className="qodef-header-logo-link qodef-height--set qodef-source--image"
         href="/"
@@ -48,7 +48,13 @@ export default function Navbar() {
               href="/"
               
             >
-              <Link to="/home"><span className="qodef-menu-item-text">
+              <Link activeClassName="active-link" 
+             style={{ 
+              background: 'linear-gradient(to right, violet, blue)',
+              WebkitBackgroundClip: 'text',
+              WebkitTextFillColor: 'transparent'
+            }}
+            to="/home"><span className="qodef-menu-item-text">
                 Home
                 <svg
                   className="qodef-svg--menu-arrow qodef-menu-item-arrow"
@@ -73,7 +79,7 @@ export default function Navbar() {
               href="/"
               
             >
-              <Link to="/software-support"><span className="qodef-menu-item-text">
+              <Link activeClassName="active-link" to="/software-support"><span className="qodef-menu-item-text">
               Software Support
                 <svg
                   className="qodef-svg--menu-arrow qodef-menu-item-arrow"
@@ -95,7 +101,7 @@ export default function Navbar() {
           </li>
           <li className="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-379 qodef--hide-link qodef-menu-item--wide">
             <a href="/"  >
-            <Link to="/about-us">  <span className="qodef-menu-item-text">
+            <Link activeClassName="active-link" to="/about-us">  <span className="qodef-menu-item-text">
               About us 
 
                 <svg
@@ -121,7 +127,7 @@ export default function Navbar() {
               href="/"
               
             >
-             <Link to="/contact-us"> <span className="qodef-menu-item-text">
+             <Link activeClassName="active-link" to="/contact-us"> <span className="qodef-menu-item-text">
                Contact Us
                 <svg
                   className="qodef-svg--menu-arrow qodef-menu-item-arrow"
@@ -146,7 +152,7 @@ export default function Navbar() {
               href="/"
               
             >
-             <Link to="/pricing"> <span className="qodef-menu-item-text">
+             <Link activeClassName="active-link" to="/pricing"> <span className="qodef-menu-item-text">
                 Pricing
                 <svg
                   className="qodef-svg--menu-arrow qodef-menu-item-arrow"
@@ -206,7 +212,7 @@ export default function Navbar() {
 
   <header id="qodef-page-mobile-header" role="banner">
     <div id="qodef-page-mobile-header-inner" className="">
-  <Link to="/home">    <a
+  <Link activeClassName="active-link" to="/home">    <a
         itemProp="url"
         className="qodef-mobile-header-logo-link qodef-height--set qodef-source--image"
         href="/"
@@ -235,7 +241,7 @@ export default function Navbar() {
             href="/"
             
           >
-           <Link to="/home"> <span className="qodef-menu-item-text">Home</span></Link>
+           <Link activeClassName="active-link" to="/home"> <span className="qodef-menu-item-text">Home</span></Link>
           </a>
           
          
@@ -245,7 +251,7 @@ export default function Navbar() {
             href="/"
             
           >
-           <Link to="/software-support"> <span className="qodef-menu-item-text">Software Support</span></Link>
+           <Link activeClassName="active-link" to="/software-support"> <span className="qodef-menu-item-text">Software Support</span></Link>
           </a>
         
        
@@ -255,7 +261,7 @@ export default function Navbar() {
             href="/"
             
           >
-           <Link to="/about-us"> <span className="qodef-menu-item-text">ABOUT US</span></Link>
+           <Link activeClassName="active-link" to="/about-us"> <span className="qodef-menu-item-text">ABOUT US</span></Link>
           </a>
          
          
@@ -265,7 +271,7 @@ export default function Navbar() {
             href="/"
             
           >
-            <Link to="/contact-us"><span className="qodef-menu-item-text">CONTACT US</span></Link>
+            <Link activeClassName="active-link" to="/contact-us"><span className="qodef-menu-item-text">CONTACT US</span></Link>
           </a>
           
           
@@ -275,7 +281,7 @@ export default function Navbar() {
             href="/"
             
           >
-            <Link to="/pricing"><span className="qodef-menu-item-text">PRICING</span></Link>
+            <Link activeClassName="active-link" to="/pricing"><span className="qodef-menu-item-text">PRICING</span></Link>
           </a>
          
            
@@ -292,7 +298,12 @@ href="/"
  onMouseDown={()=>{
         setnav(false);
         }}><RxCross2></RxCross2></a>
-<Link to="/home"> <div><span className="qodef-menu-item-text">HOME</span></div></Link>
+<Link 
+to="/home"> <div><span style={{ 
+  background: 'linear-gradient(to right, violet, blue)',
+  WebkitBackgroundClip: 'text',
+  WebkitTextFillColor: 'transparent'
+}} className="qodef-menu-item-text">HOME</span></div></Link>
 <Link to="/software-support"> <div><span className="qodef-menu-item-text">SOFTWARE SUPPORT</span></div></Link>
 <Link to="/about-us"><div> <span className="qodef-menu-item-text">ABOUT US</span></div></Link>
 <Link to="/contact-us"><div><span className="qodef-menu-item-text">CONTACT US</span></div></Link>
@@ -305,11 +316,6 @@ href="/"
     </>
   }
 
-sdfshgasndasdhabsdasjkdkshf<br></br>
-sdfshgasndasdhabsdasjkdkshf<br></br>
-sdfshgasndasdhabsdasjkdkshf<br></br>
-sdfshgasndasdhabsdasjkdkshf<br></br>
-sdfshgasndasdhabsdasjkdkshf<br></br>
 </>
 
   )

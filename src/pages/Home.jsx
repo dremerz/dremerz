@@ -4,6 +4,7 @@ import {  Link } from 'react-router-dom';
 import "../style.css";
 import { RxCross2 } from "react-icons/rx";
 import { RiBarChartHorizontalFill } from "react-icons/ri";
+import Slider from '../components/slider';
 
 export default function Home() {
   const [nav,setnav]=useState(false);
@@ -312,6 +313,11 @@ to="/home"> <div><span style={{
 
     </>
   }
+
+
+<Slider></Slider>
+
+
 
 </>
 

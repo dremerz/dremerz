@@ -1,0 +1,33 @@
+#navbar
+{
+    background-color: rgba(128, 128, 128, 0.189);
+    padding: 10px;
+    display: block;
+    z-index: 10;
+
+
+}
+#navbar div{
+font-family: monospace;
+padding: 5px;
+}
+#crossison{
+    position: fixed;
+    font-size: 25px;
+    right: 10px;
+    text-align: right;
+}
+#crossison:hover
+{
+    color:grey;
+
+}
+#navbar div:hover{
+    background-color: rgba(128, 128, 128, 0.338);
+}
+#bar:hover{
+    color: grey;
+}
+#bar{
+    font-size: 25px;
+}

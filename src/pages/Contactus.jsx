@@ -1,7 +1,10 @@
-import React from 'react'
-
+import React from 'react';
+import Navbar from "../components/navbar";
 export default function Contactus() {
   return (
-    <div>CONTACTUS</div>
+    <>
+    <Navbar></Navbar>
+    contact
+    </>
   )
 }

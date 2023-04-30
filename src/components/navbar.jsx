@@ -1,13 +1,24 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Logo from "../images/logo.png";
-import { Outlet, Link } from "react-router-dom";
+import { Outlet } from "react-router-dom";
+import { BrowserRouter, Link } from 'react-router-dom';
+import "../style.css";
+import { RxCross2 } from "react-icons/rx";
+import { RiBarChartHorizontalFill } from "react-icons/ri";
+
+
+
 
 export default function Navbar() {
+  const [nav,setnav]=useState(false);
+  useEffect(()=>{
+// console.log(nav);
+  },[])
   return (
     <>
   <header id="qodef-page-header" role="banner">
     <div id="qodef-page-header-inner" className="">
-      <a
+    <Link to="/home">   <a
         itemProp="url"
         className="qodef-header-logo-link qodef-height--set qodef-source--image"
         href="#"
@@ -26,7 +37,7 @@ export default function Navbar() {
           alt="logo light"
           itemProp="image"
         />
-      </a>
+      </a></Link>
       <nav
         className="qodef-header-navigation"
         role="navigation"
@@ -161,7 +172,10 @@ export default function Navbar() {
           </li>
         </ul>{" "}
       </nav>
-      <div className="qodef-widget-holder qodef--one">
+      <div>
+       <RiBarChartHorizontalFill id='bar'></RiBarChartHorizontalFill>
+      </div>
+      {/* <div className="qodef-widget-holder qodef--one">
         <div
           id="deon_core_side_area_opener-2"
           className="widget widget_deon_core_side_area_opener qodef-header-widget-area-one"
@@ -189,13 +203,14 @@ export default function Navbar() {
             </span>
           </a>
         </div>{" "}
-      </div>
+      </div> */}
     </div>
   </header>
 
+
   <header id="qodef-page-mobile-header" role="banner">
     <div id="qodef-page-mobile-header-inner" className="">
-      <a
+  <Link to="/home">    <a
         itemProp="url"
         className="qodef-mobile-header-logo-link qodef-height--set qodef-source--image"
         href="#"
@@ -207,42 +222,11 @@ export default function Navbar() {
           alt="logo main"
           itemProp="image" 
         />
-      </a>
-      <a
-        href="javascript:void(0)"
-        className="qodef-opener-icon qodef-m qodef-source--svg-path qodef-mobile-header-opener"
-      >
-        <span className="qodef-m-icon qodef--open">
-          <svg
-            className="qodef-open-lines"
-            xmlns="http://www.w3.org/2000/svg"
-            xmlnsXlink="http://www.w3.org/1999/xlink"
-            x="0px"
-            y="0px"
-            viewBox="0 0 41 11"
-            style={{ enableBackground: "new 0 0 41 11" }}
-            xmlSpace="preserve"
-          >
-            <line x1={1} y1={1} x2={40} y2={1} />
-            <line x1={16} y1={6} x2={40} y2={6} />
-          </svg>{" "}
-        </span>
-        <span className="qodef-m-icon qodef--close">
-          <svg
-            className="qodef-close-lines"
-            xmlns="http://www.w3.org/2000/svg"
-            xmlnsXlink="http://www.w3.org/1999/xlink"
-            x="0px"
-            y="0px"
-            viewBox="0 0 31 31"
-            style={{ enableBackground: "new 0 0 31 31" }}
-            xmlSpace="preserve"
-          >
-            <line x1="1.5" y1="29.5" x2="29.5" y2="1.5" />
-            <line x1="1.5" y1="1.5" x2="29.5" y2="29.5" />
-          </svg>{" "}
-        </span>
-      </a>
+      </a></Link>
+      <div style={{cursor:"pointer"}} 
+      onMouseDown={()=>{
+        setnav(true);
+        }} ><RiBarChartHorizontalFill id='bar' ></RiBarChartHorizontalFill></div>
     </div>
     <nav
       className="qodef-mobile-header-navigation"
@@ -304,122 +288,30 @@ export default function Navbar() {
       </ul>{" "}
     </nav>
   </header>
+  {
+    nav?<>
+      <div id='navbar'>
+<a id='crossison' onMouseDown={()=>{
+        setnav(false);
+        }}><RxCross2></RxCross2></a>
+<Link to="/home"> <div><span className="qodef-menu-item-text">HOME</span></div></Link>
+<Link to="/software-support"> <div><span className="qodef-menu-item-text">SOFTWARE SUPPORT</span></div></Link>
+<Link to="/about-us"><div> <span className="qodef-menu-item-text">ABOUT US</span></div></Link>
+<Link to="/contact-us"><div><span className="qodef-menu-item-text">CONTACT US</span></div></Link>
+<Link to="/pricing"><div><span className="qodef-menu-item-text">PRICING</span></div></Link>
 
-
-
-  <div id="qodef-side-area" className="ps ps--active-y">
-  <a
-    href="javascript:void(0)"
-    id="qodef-side-area-close"
-    className="qodef-opener-icon qodef-m qodef-source--svg-path qodef--opened"
-  >
-    <span className="qodef-m-icon ">
-      <svg
-        className="qodef-close-lines"
-        xmlns="http://www.w3.org/2000/svg"
-        xmlnsXlink="http://www.w3.org/1999/xlink"
-        x="0px"
-        y="0px"
-        viewBox="0 0 31 31"
-        style={{ enableBackground: "new 0 0 31 31" }}
-        xmlSpace="preserve"
-      >
-        <line x1="1.5" y1="29.5" x2="29.5" y2="1.5" />
-        <line x1="1.5" y1="1.5" x2="29.5" y2="29.5" />
-      </svg>{" "}
-    </span>
-  </a>
-  <div id="qodef-side-area-inner">
-    <div id="block-26" className="widget widget_block" data-area="side-area">
-      <div className="wp-block-group is-layout-flow">
-        <div className="wp-block-group__inner-container">
-          <div className="qodef-shortcode qodef-m  qodef-section-title qodef-alignment--left  ">
-            <h4 className="qodef-m-title">
-              Incredible
-              <br /> and modern
-              <br /> design{" "}
-            </h4>
-            <div className="qodef-m-section-text" style={{ marginTop: 15 }}>
-              Contemporary theme especially made for technology &amp; software
-              developing company websites. Deon, a new age of WP design.
-            </div>
-          </div>
-          <div className="widget widget_deon_core_separator">
-            <div className="qodef-shortcode qodef-m  qodef-separator clear ">
-              {" "}
-              <div
-                className="qodef-m-line"
-                style={{ borderColor: "#ffffff", marginTop: "-3px" }}
-              />
-            </div>
-          </div>
-          <div className="widget widget_deon_core_contact_info">
-            <p className="qodef-contact-info-widget qodef--email">
-              {" "}
-              <a itemProp="email" href="mailto:deon@qodeinteractive.com">
-                deon@qodeinteractive.com
-              </a>{" "}
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div
-      id="deon_core_separator-17"
-      className="widget widget_deon_core_separator"
-      data-area="side-area"
-    >
-      <div className="qodef-shortcode qodef-m  qodef-separator clear ">
-        {" "}
-        <div
-          className="qodef-m-line"
-          style={{ borderColor: "#ffffff", marginTop: 38 }}
-        />
-      </div>
-    </div>
-    <div
-      id="deon_core_social_icons_group-4"
-      className="widget widget_deon_core_social_icons_group"
-      data-area="side-area"
-    >
-      {" "}
-      <div className="qodef-social-icons-group">
-        <span className="qodef-social-icons-item qodef-layout--vertical">
-          <a
-            itemProp="url"
-            href="https://www.facebook.com/QodeInteractive/"
-            target="_blank"
-            style={{ color: "#000000" }}
-          >
-            Facebook{" "}
-          </a>
-        </span>
-        <span className="qodef-social-icons-item qodef-layout--vertical">
-          <a
-            itemProp="url"
-            href="https://twitter.com/qodeinteractive"
-            target="_blank"
-            style={{ color: "#000000" }}
-          >
-            Twitter{" "}
-          </a>
-        </span>
-        <span className="qodef-social-icons-item qodef-layout--vertical">
-          <a
-            itemProp="url"
-            href="https://www.linkedin.com/company/qode-themes/"
-            target="_blank"
-            style={{ color: "#000000" }}
-          >
-            Linkedin{" "}
-          </a>
-        </span>
-      </div>
-    </div>{" "}
-  </div>
-  <Outlet/>
 </div>
+    </>:
+    <>
 
+    </>
+  }
+
+sdfshgasndasdhabsdasjkdkshf<br></br>
+sdfshgasndasdhabsdasjkdkshf<br></br>
+sdfshgasndasdhabsdasjkdkshf<br></br>
+sdfshgasndasdhabsdasjkdkshf<br></br>
+sdfshgasndasdhabsdasjkdkshf<br></br>
 </>
 
   )

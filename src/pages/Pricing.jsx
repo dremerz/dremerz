@@ -4,7 +4,7 @@ export default function Pricing() {
   return (
     <>
     <Navbar></Navbar>
-    <div>PRICING</div>
+    <div>PRICING lol</div>
     </>
     
   )

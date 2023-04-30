@@ -22,7 +22,7 @@ export default function Navbar() {
         itemProp="url"
         className="qodef-header-logo-link qodef-height--set qodef-source--image"
         href="#"
-        rel="home"
+        rel="homme"
       >
         <img
           src={Logo}

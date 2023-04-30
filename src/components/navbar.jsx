@@ -287,7 +287,9 @@ export default function Navbar() {
   {
     nav?<>
       <div id='navbar'>
-<a id='crossison' onMouseDown={()=>{
+<a id='crossison'
+href="/"
+ onMouseDown={()=>{
         setnav(false);
         }}><RxCross2></RxCross2></a>
 <Link to="/home"> <div><span className="qodef-menu-item-text">HOME</span></div></Link>

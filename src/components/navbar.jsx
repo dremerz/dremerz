@@ -20,7 +20,7 @@ export default function Navbar() {
     <Link to="/home">   <a
         itemProp="url"
         className="qodef-header-logo-link qodef-height--set qodef-source--image"
-        href="#"
+        href="/"
         rel="homme"
       >
         <img
@@ -45,7 +45,7 @@ export default function Navbar() {
         <ul id="menu-main-menu-1" className="menu">
           <li className="menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor current-menu-parent menu-item-has-children menu-item-377 qodef--hide-link qodef-menu-item--narrow">
             <a
-              href="#"
+              href="/"
               onclick="JavaScript: return false;"
             >
               <Link to="/home"><span className="qodef-menu-item-text">
@@ -70,7 +70,7 @@ export default function Navbar() {
           </li>
           <li className="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-378 qodef--hide-link qodef-menu-item--narrow">
             <a
-              href="#"
+              href="/"
               onclick="JavaScript: return false;"
             >
               <Link to="/software-support"><span className="qodef-menu-item-text">
@@ -95,7 +95,7 @@ export default function Navbar() {
           </li>
           <li className="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-379 qodef--hide-link qodef-menu-item--wide">
             <a
-              href="#"
+              href="/"
               onclick="JavaScript: return false;"
             >
             <Link to="/about-us">  <span className="qodef-menu-item-text">
@@ -121,7 +121,7 @@ export default function Navbar() {
           </li>
           <li className="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-380 qodef--hide-link qodef-menu-item--narrow">
             <a
-              href="#"
+              href="/"
               onclick="JavaScript: return false;"
             >
              <Link to="/contact-us"> <span className="qodef-menu-item-text">
@@ -146,7 +146,7 @@ export default function Navbar() {
           </li>
           <li className="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-381 qodef--hide-link qodef-menu-item--narrow">
             <a
-              href="#"
+              href="/"
               onclick="JavaScript: return false;"
             >
              <Link to="/pricing"> <span className="qodef-menu-item-text">
@@ -212,7 +212,7 @@ export default function Navbar() {
   <Link to="/home">    <a
         itemProp="url"
         className="qodef-mobile-header-logo-link qodef-height--set qodef-source--image"
-        href="#"
+        href="/"
         rel="home"
       >
         <img
@@ -235,7 +235,7 @@ export default function Navbar() {
       <ul id="menu-main-menu-3" className="">
         <li className="menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor current-menu-parent menu-item-has-children menu-item-377 qodef--hide-link qodef-menu-item--narrow">
           <a
-            href="#"
+            href="/"
             onclick="JavaScript: return false;"
           >
            <Link to="/home"> <span className="qodef-menu-item-text">Home</span></Link>
@@ -245,7 +245,7 @@ export default function Navbar() {
         </li>
         <li className="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-378 qodef--hide-link qodef-menu-item--narrow">
           <a
-            href="#"
+            href="/"
             onclick="JavaScript: return false;"
           >
            <Link to="/software-support"> <span className="qodef-menu-item-text">Software Support</span></Link>
@@ -255,7 +255,7 @@ export default function Navbar() {
         </li>
         <li className="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-379 qodef--hide-link qodef-menu-item--wide">
           <a
-            href="#"
+            href="/"
             onclick="JavaScript: return false;"
           >
            <Link to="/about-us"> <span className="qodef-menu-item-text">ABOUT US</span></Link>
@@ -265,7 +265,7 @@ export default function Navbar() {
         </li>
         <li className="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-380 qodef--hide-link qodef-menu-item--narrow">
           <a
-            href="#"
+            href="/"
             onclick="JavaScript: return false;"
           >
             <Link to="/contact-us"><span className="qodef-menu-item-text">CONTACT US</span></Link>
@@ -275,7 +275,7 @@ export default function Navbar() {
         </li>
         <li className="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-381 qodef--hide-link qodef-menu-item--narrow">
           <a
-            href="#"
+            href="/"
             onclick="JavaScript: return false;"
           >
             <Link to="/pricing"><span className="qodef-menu-item-text">PRICING</span></Link>

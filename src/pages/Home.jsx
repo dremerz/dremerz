@@ -279,7 +279,7 @@ export default function Home() {
             href="/"
             
           >
-            <Link activeClassName="active-link" to="/pricing"><span className="qodef-menu-item-text">PRICING</span></Link>
+//             <Link activeClassName="active-link" to="/pricing"><span className="qodef-menu-item-text">PRICING</span></Link>
           </a>
          
            
